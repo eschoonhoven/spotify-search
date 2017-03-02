@@ -1,0 +1,11 @@
+.artist-container {
+  border:1px solid #666;
+  padding:2em;
+  margin:2em;
+  border-radius:4px;
+  background-color: #acc2e2;
+}
+
+h3 {
+  margin:0px 5px;
+}

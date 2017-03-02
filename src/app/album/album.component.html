@@ -1,0 +1,11 @@
+<div class="album-container">
+  <h3>Albums</h3>
+  <ul *ngIf="albums">
+    <li *ngFor="let album of albums">
+      <a [routerLink]="['/artist', artistId, 'album', album.id]">{{album.name}}</a>
+    </li>
+  </ul>
+  <a class='btn btn-primary' (click)='onBack()' style='width:80px'>
+    <i class='glyphicon glyphicon-chevron-left'></i> Back
+  </a>
+</div>

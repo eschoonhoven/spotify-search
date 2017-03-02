@@ -1,0 +1,11 @@
+<div class="artist-container">
+  <h3>Artist:</h3>
+  <input type='text' [(ngModel)]='artistInput' />
+  <a class='btn btn-primary' (click)='search()'>
+    <i class='glyphicon glyphicon-search'></i>Search
+  </a>
+  <a *ngIf='selectedArtist != null' class='btn btn-primary' (click)='getAlbums()'>
+    <i class='glyphicon glyphicon-foler-open'></i>Get Albums
+  </a>
+  <div *ngIf="message" class="alert alert-danger" role="alert">{{message}}</div>
+</div>

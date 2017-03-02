@@ -1,0 +1,9 @@
+<div *ngIf="tracks && tracks.length" class="track-container">
+  <h3>Tracks</h3>
+  <ul *ngIf="tracks">
+    <li *ngFor="let track of tracks">{{track.name}}</li>
+  </ul>
+   <a class='btn btn-primary' (click)='onBack()' style='width:80px'>
+    <i class='glyphicon glyphicon-chevron-left'></i> Back
+  </a>
+</div>
